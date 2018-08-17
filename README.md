@@ -1,0 +1,1 @@
+This Xcode project showcase a lightweight implementation of a Walkthrough Flow in Swift. It uses a paginated onboarding flow, to teach new users how to use your iOS app. The new user experience is a critical aspect of any app, so feel free to use this source code in any way you might like.
