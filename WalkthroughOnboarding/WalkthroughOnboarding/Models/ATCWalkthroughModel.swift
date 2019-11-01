@@ -19,3 +19,4 @@ class ATCWalkthroughModel {
         self.icon = icon
     }
 }
+
