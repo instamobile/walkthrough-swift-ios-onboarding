@@ -18,7 +18,7 @@ This Xcode project showcases a lightweight implementation of a Walkthrough Flow 
 <h2> More details</h2>
 
 <p>
-	Make sure you are building the project with the latest version of Xcode. This app template is running in Swift 4.1. It represents of sample source code that we used for our stunning <a href="https://www.iosapptemplates.com/templates/dashboard-ios-app-template-swift-code-iphone">Dashboard iOS App Template</a>.
+	Make sure you are building the project with the latest version of Xcode. This app template is running in Swift 5. It represents of sample source code that we used for our stunning <a href="https://www.iosapptemplates.com/templates/dashboard-ios-app-template-swift-code-iphone">Dashboard iOS App Template</a>.
 </p>
 <p>
 Made with love by <a href="http://instamobile.io/">Instamobile</a>. Please contact us to provide any feedback you got for us. Enjoy!
