@@ -24,7 +24,12 @@ class ViewController: UIViewController,  ATCWalkthroughViewControllerDelegate{
   }
   
   func walkthroughViewControllerDidFinishFlow(_ vc: ATCWalkthroughViewController) {
-    UIView.transition(with: self.view, duration: 1, options: .transitionFlipFromLeft, animations: {
+   /* UIView.transition(with: self.view, duration: 1, options: .transitionFlipFromLeft, animations: {
+      vc.view.removeFromSuperview()
+      let viewControllerToBePresented = UIViewController()
+      self.view.addSubview(viewControllerToBePresented.view)
+    }, completion: nil)*/
+    UIView.transition(with: self.view, duration: 1, options: .transitionCrossDissolve, animations: {
       vc.view.removeFromSuperview()
       let viewControllerToBePresented = UIViewController()
       self.view.addSubview(viewControllerToBePresented.view)
