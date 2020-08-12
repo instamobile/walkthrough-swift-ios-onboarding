@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCWalkthroughViewController" customModule="DashboardApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCWalkthroughViewController" customModule="WalkthroughOnboarding" customModuleProvider="target">
             <connections>
                 <outlet property="pageControl" destination="15L-4h-hYT" id="InI-Mt-Mz8"/>
+                <outlet property="skipButton" destination="fhv-xL-xB0" id="POC-ux-a9p"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,13 +23,27 @@
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="15L-4h-hYT">
                     <rect key="frame" x="168" y="594" width="39" height="37"/>
                 </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhv-xL-xB0">
+                    <rect key="frame" x="306" y="60" width="44" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="HCd-Vj-Ggv"/>
+                        <constraint firstAttribute="height" constant="30" id="R4B-z3-eKo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="SKIP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fhv-xL-xB0" secondAttribute="trailing" constant="25" id="3NO-A0-G7p"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="15L-4h-hYT" secondAttribute="bottom" constant="36" id="ICv-uv-zBE"/>
+                <constraint firstItem="fhv-xL-xB0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="RM9-rx-Qe7"/>
                 <constraint firstItem="15L-4h-hYT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yOu-mT-LsU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.80000000000001" y="152.47376311844079"/>
         </view>
     </objects>
 </document>
